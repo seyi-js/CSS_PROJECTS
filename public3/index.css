@@ -38,6 +38,10 @@ p{
 span{
     font-size: 12px;
 }
+a.password > span {
+    color:rgb(119, 184, 66);
+
+}
 
 a{
     color: #333;
@@ -98,14 +102,14 @@ input{
 }
 
 input:focus{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 20, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 255, 249, 0.22);
 
 }
 
 .wrapper{
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 20, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 255, 249, 0.22);
     position: relative;
     overflow: hidden;
     width:57%;
@@ -207,7 +211,7 @@ input:focus{
     display: none;
 }
 
-@media screen and (min-width: 1124px){
+@media screen and (min-width: 2124px){
     .wrapper.right-panel-active .sign-in-wrapper{
         transform: translateY(100%);
         
@@ -244,6 +248,8 @@ input:focus{
     .sign > span {
         color:rgb(119, 184, 66);
     }
+
+
 
     .wrapper.right-panel-active .sign-up-wrapper {
         transform: translateX(0);
@@ -285,7 +291,7 @@ input:focus{
 .overlay{
     background: #FF416C;
     background: -webkit-linear-gradient(to right, rgb(136, 161, 45), rgb(167, 190, 62));
-    background: linear-gradient(to right, rgb(147, 170, 44), rgb(204, 240, 46));
+    background: linear-gradient(to right, rgb(151, 170, 69), rgb(121, 141, 31));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -352,5 +358,5 @@ input:focus{
 }
 
 .social-wrapper a:hover{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 20, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 255, 249, 0.22);
 }
