@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 70%; */
+    background: #0f1b14f2;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+      background: linear-gradient(-90deg, #0f1b14f2,#0f1b14f2, #42644c); /* Standard syntax */
+
+}
+
+.mailing-div{
+    background: url('../assets/images/pexels-photo-1216345.jpeg');
+    background-size:cover;
+    width: 50%;
+    min-height:500px;
+    border-radius:25px;
+    padding: 20px 30px;
+    display:flex;
+    
+}
+
+
+.sub-mainling-div{
+    flex:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: -60px;
+    padding: 0 0px 0 40px;
+
+}
+div.times{
+    display: flex;
+    flex:40%;
+    justify-content: flex-end;
+    font-size: 30px;
+    
+
+}
+
+span{
+    color:#90aa91;
+    background: #a89c9c17;
+    height: 35px;
+    padding: 0 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+span:hover{
+    background:#a89c9c7d;
+}
+
+div.mailing-writeup > h3{
+    font-size:30px;
+    margin-bottom:30px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    color:#90aa91;
+}
+
+div.mailing-writeup > p{
+    font-size: 17px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    color:#90aa91;
+}
+
+div.form{
+    
+    width:100%;
+    
+}
+
+form{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    transition: all 0.5s ease-in;
+
+    /* align-items:center; */
+}
+
+
+
+
+
+ label{
+    margin-bottom:10px;
+    /* margin-left:3px; */
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size:13px;
+    color:#aaaaaa;
+}
+.fa-envelope{
+    margin-left: 3px;
+    
+}
+input[type="text"]{
+    outline: none;
+    padding: 5px 5px;
+    border:none;
+    height:27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 2px;;
+    background:#b3b9b1;
+    color: #19452e;
+}
+.button{
+    width: 70px;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    text-align:center;
+    padding: 10px 10px;
+    margin-top: 30px;
+    border-radius: 35px;
+    background:#19452e;
+    color: white;
+    font-weight: 100;
+    transition: all 0.3s ease-in;
+    
+}
+
+.button:hover{
+    box-shadow: 2px 3px #19452e;
+    background: #698867;
+    /* color:#19452e; */
+}
+
+
+@media (max-width: 900px){
+.sub-mainling-div{
+    flex:90%;
+    }
+
+    div.times{
+    display: flex;
+    flex:10%;
+    
+    
+
+}
+.mailing-div{
+
+    width: 60%;
+ 
+    
+}
+}
+
+
+@media (max-width: 680px){
+.mailing-div{
+
+    width: 70%;
+ 
+    }
+}
+
+
+@media (max-width: 500px){
+    
+div.times{
+    /* display: flex; */
+    flex:none;
+    
+    }
+.mailing-div{
+position: relative;
+    width: 90%;
+ flex-direction: column;
+    
+}
+
+.sub-mainling-div{
+    flex:100%;
+    margin-top:none;
+    
+
+}
+span{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+
+}
+
+@media (max-width: 400px){
+.mailing-div{
+    
+    padding: 10px 20px;
+    
+    
+}
+}

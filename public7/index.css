@@ -1,0 +1,266 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: white;
+    height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    
+    
+}
+
+/* HEADER SECTION */
+
+header{
+    display:flex;
+    background: #181818;
+    width: 100%;
+    height:70px;
+    align-items:center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+header .logo{
+    flex: 1;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+header .logo p span{
+    margin-right: 15px;
+    font-size:40px;
+    color:#cd5e18;
+    
+}
+header .logo p{
+    
+    font-weight:bold;
+    font-size:17px;
+}
+
+header .nav-1{
+    flex: 2;
+    /* margin: 0 20px; */
+    
+}
+header .nav-1 ul,header .nav-2 ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+header .nav-2{
+    flex: 1;
+}
+header .nav-2 ul li{
+    transition: all 0.3s ease-in;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .nav-2 ul li:hover{
+    background-color:#efaf7c ;
+}
+
+
+header .nav-2 ul li.register{
+    background: #464646;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+header .nav-2 ul li.register:hover{
+    background: #efaf7c;
+    color:#464646;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    transition: all 0.3s ease-in;
+    color: #efaf7c;
+   
+}
+
+/* INTRO SECTION */
+
+.intro-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 70%;
+    margin: auto;
+    /* margin: 30px 30px 0 30px; */
+    padding: 20px 0px 30px 0;
+}
+
+.intro-section-h1{
+    font-size:50px;
+    font-weight:800;
+    /* text-align:center; */
+}
+
+
+.intro-section-p{
+    font-weight:100;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin:auto;
+    font-size: 15px;
+    line-height:20px;
+}
+
+/* BANNER */
+
+.banner{
+    width: 90%;
+    height: 700px;
+    margin:30px auto
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* AFTER BANNER SECTION */
+
+.after-banner-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    margin:70px auto;
+    grid-gap:20px;
+}
+.after-banner-section-1{
+    width:80%;
+    margin: auto;
+}
+.after-banner-section-1 h2{
+    font-size: 40px;
+    margin-bottom:  10px;
+}
+
+.after-banner-section-1 span{
+    /* margin: -20px 0 30px 0; */
+    font-size:20px;
+
+}
+
+.after-banner-section-1 img{
+    margin-top:30px;
+    width:100%;
+
+}
+.after-banner-section-2{
+    width:80%;
+    margin: 0 auto;
+}
+
+.after-banner-section-2 img{
+    width:100%;
+    height:400px;
+    margin-bottom: 30px;
+}
+
+.after-banner-section-2 p{
+    line-height:20px;
+    font-size:15px;
+    margin-bottom: 30px;
+}
+
+.after-banner-section-2 span{
+    background: #cd5e18;
+    padding: 17px 20px;
+    
+    font-size:13px;
+}
+.after-banner-section-2 span .fa-long-arrow-right{
+    margin-left: 5px;
+}
+
+
+
+/* SMALL SPACE SECTION */
+
+.small-space-section{
+    background: #f7f1f1;
+    color: #222222;
+    width: 100%;
+}
+
+.sub-small-space-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:50px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0
+}
+
+.small-space-section-1{
+    width: 100%;
+    margin: 0 auto;
+}
+.small-space-section-1 h3{
+    color:#cd5e18;
+
+    line-height: 39px;
+}
+.small-space-section-1 h3 b{
+    font-weight: bolder;
+    font-size: 30px;
+    
+    
+}
+.small-space-section-1 h3 span{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.small-space-section-1 p{
+    margin:60px 0px 30px 0;
+    line-height: 30px;
+    font-weight: lighter;
+    color: #4a5c66;
+}
+
+.small-space-section-1 span{
+    color: #4a5c66;
+
+    line-height: 30px;
+}
+
+.small-space-section-1 h4 a{
+    color:#cd5e18;
+    font-family: auto;
+    font-size:12px;
+}
+
+.small-space-section-2{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+}
+
+.small-space-section-2 img{
+    width: 70%;
+    height: auto;
+    
+}
