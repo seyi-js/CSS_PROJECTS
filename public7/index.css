@@ -186,13 +186,18 @@ header a:hover{
 .after-banner-section-2 span{
     background: #cd5e18;
     padding: 17px 20px;
-    
+    cursor: pointer;
     font-size:13px;
+    transition: all 0.3s ease-in;
 }
 .after-banner-section-2 span .fa-long-arrow-right{
     margin-left: 5px;
 }
 
+.after-banner-section-2 span:hover{
+    background-color: transparent;
+    color:#cd5e18;
+}
 
 
 /* SMALL SPACE SECTION */
@@ -251,6 +256,13 @@ header a:hover{
     font-size:12px;
 }
 
+.small-space-section-1 h4 a:hover{
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+    color: #4a5c66;
+    font-size: 14px;
+}
+
 .small-space-section-2{
     width: 100%;
     margin: auto;
@@ -264,3 +276,124 @@ header a:hover{
     height: auto;
     
 }
+
+/* Explore Section */
+
+.explore-section{
+    display: grid; 
+    grid-template-columns: 100%;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; 
+    background: #ffffff;
+    color: black;
+    padding: 70px 0 70px 0;
+    width: 100%;
+}
+
+.explore-section h3 {
+    margin: auto;
+    line-height: 18px
+}
+.explore-section h3 span{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+.explore-section h3 p{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: none;
+}
+
+.explore-section-categories{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    
+}
+
+.explore-section-categories-sideBar{
+    justify-content: center;
+    align-items: center; 
+    margin: 20px auto;   
+
+}
+
+input[placeholder="Search Category"]{
+    border: none;
+    outline: none;
+    background:#e7e8e8;
+}
+
+
+.explore-section-categories-sideBar ul{
+    list-style: none;
+    padding-left: 0;
+  
+    
+}
+
+.explore-section-categories-sideBar ul li{
+    margin-top: 50px;
+    cursor:pointer;
+}
+.explore-section-categories-sideBar ul li:hover{
+    transition: all 0.3s ease-in;
+    color:#cd5e18;
+
+
+}
+.explore-section-categories-sideBar span{
+    background: #e7e8e8;
+    padding: 14px 12px;
+    color:#71797d;  
+}
+
+
+h5.all-categories{
+    margin-top: 40px;
+    background: #cd5e18;
+    text-align:center;
+    padding: 14px 0px;
+    color:white; 
+    transition: all .3s ease-in;
+}
+
+h5.all-categories:hover{
+    color:#cd5e18;
+    background: transparent;
+
+}
+
+.explore-section-categories-images{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    
+}
+
+.explore-section-categories-images section{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.explore-section-categories-images section img{
+    width: 100%;
+    height: 100%;
+}
+
+.explore-section-categories-images section p{
+    position: absolute;
+    /* top: 0px; */
+    color: white;
+    /* display: none; */
+    z-index: 5;
+    bottom:50px;
+}
+
