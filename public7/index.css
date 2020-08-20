@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
 *{
     box-sizing:border-box;
 }
@@ -8,7 +11,7 @@ body{
     background-color: #222222;
     color: white;
     height: 100vh;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: 'Baloo Tamma 2', cursive;
     position: relative;
     
 }
@@ -125,9 +128,9 @@ header a:hover{
 .intro-section-h1{
     font-size:50px;
     font-weight:800;
+    font-family:'Lobster', cursive;
     /* text-align:center; */
 }
-
 
 .intro-section-p{
     font-weight:100;
@@ -143,8 +146,10 @@ header a:hover{
     width: 90%;
     height: 700px;
     margin:30px auto;
+  
     
 }
+
 
 .banner img {
     width: 100%;
@@ -169,7 +174,38 @@ header a:hover{
 .after-banner-section-1{
     width:80%;
     margin: auto;
-    
+    position:relative;
+    /* display: none; */
+    left: -100px;
+transition:all 1s ease-in
+    /* animation-fill-mode: forwards; */
+}
+.after-banner-section-1:visited{
+    left: 0px;
+}
+.slide-in{
+    /* display: block; */
+    /* left: -1000px; */
+
+    /* animation: box 4s infinite; */
+}
+
+@keyframes box {
+    0%{
+        left: -1000px;
+        top:0px;
+        
+    }
+
+   
+
+    100%{
+       
+        left: 0px;
+        top:0px;
+        
+        
+    }
 }
 .after-banner-section-1 h2{
     font-size: 40px;
