@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style:none;
+}
+
+body{
+    color:black;
+    height: 100vh;
+    position:relative;
+    background: white;
+}
+
+/* HEADER SECTION */
+
+section.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    z-index:1;
+    top:0;
+    width:100%;
+    height:90px;
+    background:#ffffff;
+    padding: 0 50px;
+}
+
+section.header div.naviagtion{
+    display: flex;
+    flex-direction: column;
+}
+
+section.header .nav-1>ul, section.header .nav-2>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding:15px 0;
+    text-align:center;
+    
+}
+
+section.header .nav-1 ul li a{
+color: #236196 ;
+text-transform:uppercase;
+font-size: 13px;
+}
+
+section.header .nav-1 li.en a{
+    color:#f48b30;
+}
+section.header .nav-1 li.en a > i, .nav-2 .fa-chevron-down{
+    font-size: 10px;
+    margin-left:2px;
+    
+}
+
+section.header .nav-2 ul li a{
+    color: #202020 ;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 13px;
+}
+
+section.header .nav-2 .fa-search{
+    color:#90b0ca;
+    font-size:20px;
+}
+
+
+section.header ul li a{
+   
+    margin:0 10px;
+    
+}
+
+section.header .fa-user, section.header .fa-user-plus{
+    margin-right:5px;
+}
+
+/* SECTION BANNER */
+
+
+
+
+/* SECTION STEPS */
+section.steps{
+    
+    margin-top:120px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section.steps>div{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* align-items:center; */
+    text-align:center;
+    padding: 10px 20px;
+    color:white;
+
+}
+
+section.steps>div h3{
+    
+text-transform: uppercase;
+font-weight: lighter;
+margin-top:10px;
+}
+
+section.steps>div h1{
+    
+    font-size:25px;
+    }
+
+section.steps .step-1{
+    background:#0f5c8c;
+}
+section.steps .step-2{
+    background:#034074;
+}
+section.steps .step-3{
+    background:#0f528c;
+}
+
+
+/* WRITE UP SECTION */
+
+section.write-up{
+    display:grid;
+    width:80%;
+    /* height: 100%; */
+    /* background: pink; */
+    margin: 50px auto;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px;
+}
+
+section.write-up>div.write-up-left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+
+
+
+
+section.write-up div.write-up-right h2{
+    margin-bottom:20px;
+}
+
+section.write-up div.write-up-right p{
+   line-height:20px;
+   color:#c3bcbc;
+}
